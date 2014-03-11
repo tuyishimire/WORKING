@@ -1,11 +1,11 @@
 #!/bin/bash
-argument=$#;
+arguments=$#;
 argument=$@;
 
 echo;i=1;
-for argument in "$@";
+for arguments in "$@";
 do
-echo " argument$i=$argument";
+echo "$arguments"
 let "i+=1"
 done
 echo "$argument">>names.txt
